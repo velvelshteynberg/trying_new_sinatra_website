@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>NewFamilyMember</title>
+</head>
+
+<body>
+<h1> New Family Member Form </h1>
+
+<% #the action command tells you that when you submit this form you want to go to the addmovie route and add this movie to the array of movies and display all of the movies%>
+<form action='/AddingNewFamilyMember' method="POST">
+    <label for="name"> New Family Member Info </label>
+    <input type="text" id="Name" name="First_Name" placeholder="Please enter the first name..">
+    <input type="text" id="Name" name="Last_Name" placeholder="Please enter your last name">
+    <input type="submit" value="Create New Family Member">
+</form>
+
+</body>
+</html>

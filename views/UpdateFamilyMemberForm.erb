@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UpdateFamilyMemberForm</title>
+</head>
+
+<body>
+<h1> Update Family Member Form </h1>
+
+<form action='/AddingNewFamilyMember' method="POST">
+    <label for="name"> Update Family Member Info </label>
+    <input type="text" id="Name" name="First_Name" value=<%=@first_name%>>
+    <input type="text" id="Name" name="Last_Name" value=<%=@last_name%>>
+    <input type="submit" value="Update Family Member info">
+</form>
+
+</body>
+</html>

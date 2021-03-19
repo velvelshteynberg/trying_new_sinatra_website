@@ -1,0 +1,30 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>DisplayFamilyMembers</title>
+</head>
+
+<body> 
+<h1> These are all of the family members </h1>
+<ul>
+
+<% @all_family_members.each.with_index do |individual_family_member, index| %>
+
+
+<li> 
+<h1>  <%= individual_family_member[:First_name] %> </h1> 
+<a href="/DeleteFamilyMember?First_name=<%=individual_family_member[:First_name]%>&id=<%=index%>"> Delete</a> 
+<a href="/updatefamilymemberform?First_name=<%=individual_family_member[:First_name]%>&Last_name=<%=individual_family_member[:Last_name]%>">Update<a>
+</li>  
+
+<% end %>
+
+
+
+</ul>
+</body>
+</html>
